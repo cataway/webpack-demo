@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -12,8 +12,10 @@
   "devDependencies": {
     "css-loader": "^0.28.4",
     "file-loader": "^0.11.2",
+    "serve": "^6.0.1",
     "style-loader": "^0.18.2",
-    "webpack": "^3.0.0"
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
   },
   "dependencies": {
     "lodash": "^4.17.4"
