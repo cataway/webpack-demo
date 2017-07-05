@@ -1,5 +1,5 @@
-var webpack = require('webpack');
-var path = require('path');
+const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
 	entry: './src/index.js',
@@ -25,5 +25,13 @@ module.exports = {
 				'file-loader'
 			]
 		}]
+	},
+	plugins: [
+		new webpack.HotModuleReplacementPlugin() // 启用HMR(热启动)
+	],
+	devServer: {
+		hot: true, // 告诉 dev-server 我们在使用 HMR
+		contentBase: path.resolve(__dirname, 'dist'),
+		publicPath: '/'
 	}
 };

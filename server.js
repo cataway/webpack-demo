@@ -21,6 +21,6 @@ server.app.get("*", function(req, res) {
 	res.sendFile(__dirname + '/index.html')
 });
 
-server.listen(8080, function() {
+server.listen(8088, function() {
 	console.log("Start success");
 });
