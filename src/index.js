@@ -14,7 +14,7 @@ console.log('in')
 function component() {
 	var element = document.createElement('div');
 
-	element.innerHTML = _.join(['What a u', '弄啥咧?'], ' ');
+	element.innerHTML = _.join(['What are you', '弄啥咧?'], ' ');
 	element.classList.add('hello');
 
 	// 添加图片
